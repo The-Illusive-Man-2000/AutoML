@@ -5,7 +5,7 @@ https://www.kaggle.com/competitions/ventilator-pressure-prediction/overview
 
 Ссылка на гугл диск со всеми файлами сгенерированными для сабмита
 
-
+$~~~~~~~~~$
 
 #### Описание файлов:
 
