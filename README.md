@@ -29,7 +29,7 @@ $~~~~~~~~~$
 | KNeighborsRegressor                                               | 0.7259              |
 | VotingRegressor (KNeighborsRegressor + LGBMRegressor)             | 0.7609              |
 | CatBoostRegressor (RandomizedSearchCV)                            | 0.7735              |
-| VotingRegressor (LGBMRegressor + CatBoostRegressor)               | 0.8592              | 
+| VotingRegressor (LGBMRegressor + CatBoostRegressor)               | 0.8286              | 
 | CatBoostRegressor                                                 | 1.3124              |
 | LGBMRegressor                                                     | 1.1923              |
 | LGBMRegressor (RandomizedSearchCV)                                | 1.0018              |
