@@ -26,6 +26,7 @@ $~~~~~~~~~$
 | KNeighborsRegressor (на дополнительно сгенерированных признаках)  | 0.6671              | 
 | LightAutoML baseline                                              | 0.6824              | 
 | KNeighborsRegressor                                               | 0.7259              |
+| VotingRegressor (KNeighborsRegressor + LGBMRegressor)             | 0.7609              |
 | CatBoostRegressor (RandomizedSearchCV)                            | 0.8252              |
 | CatBoostRegressor                                                 | 1.3124              |
 | LGBMRegressor                                                     | 1.1923              |
