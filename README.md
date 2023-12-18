@@ -21,23 +21,23 @@ $~~~~~~~~~$
 
 #### Таблица сравнения LightAutoML baseline и решений на основе других методов:
 
-| Модель                                 | MAE                 |
-| :--------------------------------------|:-------------------:|
-| Свое решение                           | 0.6644              | 
-| LightAutoML baseline                   | 0.6824              | 
-| KNeighborsRegressor                    | 0.7259              |
-| CatBoostRegressor (RandomizedSearchCV) | 0.8252              |
-| CatBoostRegressor                      | 1.3124              |
-| LGBMRegressor                          | 1.1923              |
-| LGBMRegressor (RandomizedSearchCV)     | 1.0018              |
-| LinearRegression                       | 5.8927              |
-| Lasso                                  | 6.8041              |
-| Lasso (GridSearchCV)                   | 6.384               |
-| Ridge                                  | 5.8927              |
-| Ridge (GridSearchCV)                   | 5.8927              |
-| ElasticNet                             | 6.7186              | 
-| ElasticNet (GridSearchCV)              | 6.1399              |
-| LinearSVR                              | 6.4595              |
+| Модель                                                            | MAE                 |
+| :-----------------------------------------------------------------|:-------------------:|
+| KNeighborsRegressor (на дополнительно сгенерированных признаках)  | 0.6671              | 
+| LightAutoML baseline                                              | 0.6824              | 
+| KNeighborsRegressor                                               | 0.7259              |
+| CatBoostRegressor (RandomizedSearchCV)                            | 0.8252              |
+| CatBoostRegressor                                                 | 1.3124              |
+| LGBMRegressor                                                     | 1.1923              |
+| LGBMRegressor (RandomizedSearchCV)                                | 1.0018              |
+| LinearRegression                                                  | 5.8927              |
+| Lasso                                                             | 6.8041              |
+| Lasso (GridSearchCV)                                              | 6.384               |
+| Ridge                                                             | 5.8927              |
+| Ridge (GridSearchCV)                                              | 5.8927              |
+| ElasticNet                                                        | 6.7186              | 
+| ElasticNet (GridSearchCV)                                         | 6.1399              |
+| LinearSVR                                                         | 6.4595              |
 
 
 Также я пытался применить RandomForestRegressor, но он вылетал по памяти при обучении.
