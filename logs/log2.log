@@ -1,0 +1,505 @@
+[2023-12-12 23:22:31,626] (INFO): Train KNeighborsRegressor(n_jobs=4)
+[2023-12-13 00:12:43,904] (INFO): Train KNeighborsRegressor(n_jobs=4)
+[2023-12-13 00:32:24,453] (INFO): Train KNeighborsRegressor(n_jobs=4)
+[2023-12-13 00:43:31,772] (INFO): Train KNeighborsRegressor()
+[2023-12-13 01:06:40,205] (INFO): Train KNeighborsRegressor()
+[2023-12-13 01:22:28,974] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-13 01:22:51,216] (INFO): LGBMRegressor предсказание:
+[6.03112118 5.782394   6.88954194 ... 6.11385965 6.12742162 6.12742162]
+ Shape = (4024000,) 
+
+[2023-12-13 01:33:49,400] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-13 01:38:00,255] (INFO): LGBMRegressor RandomSearch предсказание:
+[5.80445901 5.7986716  6.55440031 ... 6.24168491 6.22743242 6.22743242]
+ Shape = (4024000,) 
+
+[2023-12-13 01:44:42,489] (INFO): Train KNeighborsRegressor()
+[2023-12-13 12:08:53,007] (INFO): Train KNeighborsRegressor()
+[2023-12-13 17:39:04,415] (INFO): KNeighborsRegressor RandomSearch предсказание:
+[[5.63662843]
+ [5.82744854]
+ [6.90206705]
+ ...
+ [6.36977938]
+ [6.25930458]
+ [6.40995203]]
+ Shape = (4024000, 1) 
+
+[2023-12-13 17:44:41,450] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-13 17:46:25,550] (INFO): LGBMRegressor предсказание:
+[6.03112118 5.782394   6.88954194 ... 6.11385965 6.12742162 6.12742162]
+ Shape = (4024000,) 
+
+[2023-12-13 18:31:14,586] (INFO): LGBMRegressor RandomSearch предсказание:
+[6.17564746 5.97463022 7.20073008 ... 6.11164374 6.08811636 6.11050839]
+ Shape = (4024000,) 
+
+[2023-12-13 18:39:14,976] (INFO): Train <catboost.core.CatBoostRegressor object at 0x000001D645ED53D0>
+[2023-12-13 18:39:56,586] (INFO): CatBoostRegressor предсказание:
+[6.63204788 6.39123079 7.28575119 ... 6.20530023 6.18632059 6.15370446]
+ Shape = (4024000,) 
+
+[2023-12-13 21:06:28,694] (INFO): CatBoostRegressor RandomSearch предсказание:
+[6.4478003  6.13403198 7.17849768 ... 6.22249345 6.18520638 6.2117203 ]
+ Shape = (4024000,) 
+
+[2023-12-14 01:42:02,085] (INFO): Train StackingRegressor(estimators=[('knregressor', KNeighborsRegressor())],
+                  final_estimator=LGBMRegressor(metric='mae',
+                                                objective='regression',
+                                                random_state=42),
+                  verbose=3)
+[2023-12-14 02:56:50,441] (INFO): StackingRegressor_1 предсказание:
+[5.81411218 5.78363115 6.81735266 ... 6.43400215 6.24535511 6.40037434]
+ Shape = (4024000,) 
+
+[2023-12-14 04:48:17,621] (INFO): Train StackingRegressor(estimators=[('knregressor', KNeighborsRegressor())],
+                  final_estimator=<catboost.core.CatBoostRegressor object at 0x000001D654A40400>,
+                  verbose=3)
+[2023-12-14 06:02:57,310] (INFO): StackingRegressor_2 предсказание:
+[5.80495845 5.79941403 6.82131727 ... 6.40310356 6.24536294 6.39990954]
+ Shape = (4024000,) 
+
+[2023-12-14 07:49:13,329] (INFO): Train StackingRegressor(estimators=[('knregressor', KNeighborsRegressor()),
+                              ('lgb',
+                               LGBMRegressor(metric='mae',
+                                             objective='regression',
+                                             random_state=42))],
+                  final_estimator=<catboost.core.CatBoostRegressor object at 0x000001D654A7F5E0>,
+                  verbose=3)
+[2023-12-14 11:06:09,750] (INFO): StackingRegressor_3 предсказание:
+[5.7689234  5.74194527 6.80127462 ... 6.3910197  6.24340682 6.37773999]
+ Shape = (4024000,) 
+
+[2023-12-14 17:17:20,471] (INFO): Train RadiusNeighborsRegressor()
+[2023-12-14 18:13:13,086] (INFO): Train RadiusNeighborsRegressor()
+[2023-12-14 19:30:29,235] (INFO): Train RadiusNeighborsRegressor()
+[2023-12-14 20:17:18,383] (INFO): Train RadiusNeighborsRegressor(algorithm='ball_tree')
+[2023-12-14 21:11:51,677] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-14 21:13:29,346] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-14 21:16:11,958] (INFO): LGBMRegressor 2 предсказание:
+[5.90855841 5.8610354  6.360091   ... 6.12759451 6.13599163 6.13599163]
+ Shape = (4024000,) 
+
+[2023-12-15 01:00:06,460] (INFO): Train KNeighborsRegressor()
+[2023-12-15 02:54:03,711] (INFO): Train KNeighborsRegressor()
+[2023-12-15 07:44:04,925] (INFO): KNeighborsRegressor with more features предсказание:
+[[5.90779385]
+ [5.94997514]
+ [7.10293032]
+ ...
+ [6.35772758]
+ [6.24524415]
+ [6.34366715]]
+ Shape = (4024000, 1) 
+
+[2023-12-15 14:29:29,589] (INFO): Train StackingRegressor(estimators=[('knregressor', KNeighborsRegressor())],
+                  final_estimator=LGBMRegressor(metric='mae',
+                                                objective='regression',
+                                                random_state=42),
+                  verbose=3)
+[2023-12-16 09:40:30,324] (INFO): Train KNeighborsRegressor()
+[2023-12-16 19:14:58,954] (INFO): Train LinearRegression()
+[2023-12-16 19:15:09,588] (INFO): LinearRegression предсказание:
+[[14.42988628]
+ [14.45725023]
+ [14.51060023]
+ ...
+ [ 5.25299264]
+ [ 5.27179737]
+ [ 5.29050756]]
+ Shape = (4024000, 1) 
+
+[2023-12-16 19:20:36,532] (INFO): Train LinearRegression()
+[2023-12-16 19:29:53,324] (INFO): Train LinearRegression()
+[2023-12-16 19:29:55,038] (INFO): LinearRegression предсказание:
+[[14.42988628]
+ [14.45725023]
+ [14.51060023]
+ ...
+ [ 5.25299264]
+ [ 5.27179737]
+ [ 5.29050756]]
+ Shape = (4024000, 1) 
+
+[2023-12-16 19:35:31,019] (INFO): Train LinearRegression()
+[2023-12-16 19:35:33,129] (INFO): LinearRegression предсказание:
+[[14.42988628]
+ [14.45725023]
+ [14.51060023]
+ ...
+ [ 5.25299264]
+ [ 5.27179737]
+ [ 5.29050756]]
+ Shape = (4024000, 1) 
+
+[2023-12-16 19:38:21,459] (INFO): Train Lasso(random_state=42)
+[2023-12-16 19:38:32,583] (INFO): Lasso предсказание:
+[14.7747334  14.7747334  14.7747334  ...  8.31123212  8.31173705
+  8.31216228]
+ Shape = (4024000,) 
+
+[2023-12-16 19:57:03,531] (INFO): GridSearch GridSearchCV(cv=5, estimator=Lasso(random_state=42),
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297, 0.6472361809045226,
+                                   0.6969849246231156, 0.7467336683417085,
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-16 19:58:14,785] (INFO): Lasso GridSearch предсказание:
+[14.85060312 14.86232431 14.88517649 ...  6.89120413  6.89956346
+  6.90783424]
+ Shape = (4024000,) 
+
+[2023-12-16 20:01:24,873] (INFO): Train Ridge(random_state=42)
+[2023-12-16 20:01:29,102] (INFO): Ridge предсказание:
+[[14.42988619]
+ [14.45725012]
+ [14.51060008]
+ ...
+ [ 5.25299368]
+ [ 5.2717984 ]
+ [ 5.29050857]]
+ Shape = (4024000, 1) 
+
+[2023-12-16 20:12:57,835] (INFO): GridSearch GridSearchCV(cv=5, estimator=Ridge(random_state=42),
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297, 0.6472361809045226,
+                                   0.6969849246231156, 0.7467336683417085,
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-16 20:13:16,289] (INFO): Ridge GridSearch предсказание:
+[[14.42988536]
+ [14.4572491 ]
+ [14.5105987 ]
+ ...
+ [ 5.25300301]
+ [ 5.27180761]
+ [ 5.29051766]]
+ Shape = (4024000, 1) 
+
+[2023-12-16 20:15:20,312] (INFO): Train ElasticNet(random_state=42)
+[2023-12-16 20:15:27,795] (INFO): ElasticNet предсказание:
+[13.79461031 13.79565438 13.79768995 ...  8.61648702  8.61768341
+  8.6188006 ]
+ Shape = (4024000,) 
+
+[2023-12-16 20:30:02,946] (INFO): GridSearch GridSearchCV(cv=5, estimator=ElasticNet(random_state=42), n_jobs=2,
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297, 0.6472361809045226,
+                                   0.6969849246231156, 0.7467336683417085,
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-16 20:31:32,058] (INFO): ElasticNet GridSearch предсказание:
+[14.36331046 14.37714544 14.40411873 ...  6.36566209  6.37546127
+  6.38516662]
+ Shape = (4024000,) 
+
+[2023-12-16 20:44:10,197] (INFO): Train LinearSVR(dual='auto', random_state=42)
+[2023-12-16 20:47:12,345] (INFO): LinearSVR предсказание:
+[11.79086388 10.05802246  9.10050619 ...  5.24429161  5.98299548
+  6.09989593]
+ Shape = (4024000,) 
+
+[2023-12-16 20:49:59,775] (INFO): Train KNeighborsRegressor()
+[2023-12-16 21:59:23,348] (INFO): KNeighborsRegressor предсказание:
+[[5.79531042]
+ [5.76718956]
+ [6.83578217]
+ ...
+ [6.42802973]
+ [6.24524415]
+ [6.39990887]]
+ Shape = (4024000, 1) 
+
+[2023-12-17 00:59:10,458] (INFO): Train LinearRegression()
+[2023-12-17 00:59:20,797] (INFO): LinearRegression предсказание:
+[[14.42982521]
+ [14.45718881]
+ [14.51053812]
+ ...
+ [ 5.25312144]
+ [ 5.27192594]
+ [ 5.2906359 ]]
+ Shape = (4024000, 1) 
+
+[2023-12-17 01:01:12,172] (INFO): Train Lasso(random_state=42)
+[2023-12-17 01:01:14,202] (INFO): Lasso предсказание:
+[14.77454745 14.77454745 14.77454745 ...  8.31123037  8.31173531
+  8.31216054]
+ Shape = (4024000,) 
+
+[2023-12-17 01:14:30,760] (INFO): GridSearch GridSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+             estimator=Lasso(random_state=42),
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297, 0.64723618090...
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-17 01:17:26,237] (INFO): Lasso GridSearch предсказание:
+[14.85057332 14.86229383 14.88514466 ...  6.89115061  6.89950949
+  6.90777983]
+ Shape = (4024000,) 
+
+[2023-12-17 01:19:03,649] (INFO): Train Ridge(random_state=42)
+[2023-12-17 01:19:05,993] (INFO): Ridge предсказание:
+[[14.42982512]
+ [14.45718869]
+ [14.51053796]
+ ...
+ [ 5.25312248]
+ [ 5.27192697]
+ [ 5.29063691]]
+ Shape = (4024000, 1) 
+
+[2023-12-17 01:27:52,695] (INFO): GridSearch GridSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+             estimator=Ridge(random_state=42),
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297, 0.64723618090...
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-17 01:30:01,887] (INFO): Ridge GridSearch предсказание:
+[[14.42982429]
+ [14.45718768]
+ [14.51053658]
+ ...
+ [ 5.25313181]
+ [ 5.27193617]
+ [ 5.290646  ]]
+ Shape = (4024000, 1) 
+
+[2023-12-17 01:31:39,135] (INFO): Train ElasticNet(random_state=42)
+[2023-12-17 01:31:41,242] (INFO): ElasticNet предсказание:
+[13.79455305 13.79559727 13.79763313 ...  8.61640756  8.61760405
+  8.61872135]
+ Shape = (4024000,) 
+
+[2023-12-17 01:42:12,192] (INFO): GridSearch GridSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+             estimator=ElasticNet(random_state=42), n_jobs=2,
+             param_grid={'alpha': [0.1, 0.14974874371859298,
+                                   0.19949748743718593, 0.2492462311557789,
+                                   0.2989949748743719, 0.3487437185929648,
+                                   0.39849246231155777, 0.44824120603015083,
+                                   0.4979899497487438, 0.5477386934673367,
+                                   0.5974874371859297...
+                                   0.7964824120603016, 0.8462311557788945,
+                                   0.8959798994974875, 0.9457286432160804,
+                                   0.9954773869346734, 1.0452261306532664,
+                                   1.0949748743718595, 1.1447236180904523,
+                                   1.1944723618090454, 1.2442211055276384,
+                                   1.2939698492462313, 1.3437185929648243,
+                                   1.3934673366834172, 1.4432160804020102,
+                                   1.4929648241206033, 1.542713567839196, ...]},
+             scoring='neg_mean_absolute_error', verbose=3)
+[2023-12-17 01:42:30,724] (INFO): ElasticNet GridSearch предсказание:
+[14.3632342  14.37706915 14.40404239 ...  6.36572444  6.37552361
+  6.38522894]
+ Shape = (4024000,) 
+
+[2023-12-17 01:53:57,641] (INFO): Train LinearSVR(dual='auto', random_state=42)
+[2023-12-17 01:54:20,023] (INFO): LinearSVR предсказание:
+[11.77480421 10.05036551  9.11036038 ...  5.24688803  5.98567742
+  6.0986247 ]
+ Shape = (4024000,) 
+
+[2023-12-17 01:57:14,805] (INFO): Train KNeighborsRegressor()
+[2023-12-17 03:08:19,281] (INFO): KNeighborsRegressor предсказание:
+[[5.79531042]
+ [5.76718956]
+ [6.83578217]
+ ...
+ [6.42802973]
+ [6.24524415]
+ [6.39990887]]
+ Shape = (4024000, 1) 
+
+[2023-12-17 03:12:15,542] (INFO): Train LGBMRegressor(metric='mae', objective='regression', random_state=42)
+[2023-12-17 03:12:26,023] (INFO): LGBMRegressor предсказание:
+[5.86147548 5.81448591 6.59771823 ... 6.12840516 6.159729   6.159729  ]
+ Shape = (4024000,) 
+
+[2023-12-17 03:41:18,854] (INFO): RandomSearch RandomizedSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+                   estimator=LGBMRegressor(metric='mae', objective='regression',
+                                           random_state=42),
+                   n_iter=30,
+                   param_distributions={'n_estimators': [50, 100, 150, 200],
+                                        'num_leaves': [5, 10, 15, 20, 25, 30,
+                                                       35, 40],
+                                        'reg_alpha': [0.0, 0.3333333333333333,
+                                                      0.6666666666666666, 1.0,
+                                                      1.3333333333333333,
+                                                      1.6...
+                                                      2.333333333333333,
+                                                      2.6666666666666665, 3.0],
+                                        'reg_lambda': [0.0, 0.21428571428571427,
+                                                       0.42857142857142855,
+                                                       0.6428571428571428,
+                                                       0.8571428571428571,
+                                                       1.0714285714285714,
+                                                       1.2857142857142856, 1.5,
+                                                       1.7142857142857142,
+                                                       1.9285714285714284,
+                                                       2.142857142857143,
+                                                       2.357142857142857,
+                                                       2.571428571428571,
+                                                       2.7857142857142856,
+                                                       3.0]},
+                   random_state=42, scoring='neg_mean_absolute_error',
+                   verbose=3)
+[2023-12-17 03:47:17,936] (INFO): LGBMRegressor RandomSearch предсказание:
+[6.30134421 6.02842455 7.31914513 ... 6.11459599 6.12484854 6.14179632]
+ Shape = (4024000,) 
+
+[2023-12-17 03:57:28,169] (INFO): Train <catboost.core.CatBoostRegressor object at 0x0000018D8632A790>
+[2023-12-17 04:00:05,351] (INFO): CatBoostRegressor предсказание:
+[6.56310238 6.39911426 7.23721011 ... 6.18001516 6.17732211 6.16313176]
+ Shape = (4024000,) 
+
+[2023-12-17 05:16:22,792] (INFO): RandomSearch RandomizedSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+                   estimator=<catboost.core.CatBoostRegressor object at 0x0000018D8632A790>,
+                   n_iter=5,
+                   param_distributions={'depth': [4, 5, 6, 7, 8, 9, 10],
+                                        'l2_leaf_reg': [1, 3, 5, 7, 9],
+                                        'learning_rate': [0.03, 0.06, 0.09,
+                                                          0.12, 0.15],
+                                        'n_estimators': [500, 600, 700, 800,
+                                                         900, 1000]},
+                   random_state=42, scoring='neg_mean_absolute_error',
+                   verbose=3)
+[2023-12-17 05:25:55,973] (INFO): CatBoostRegressor RandomSearch предсказание:
+[6.3898545  6.12891817 7.33635154 ... 6.22482425 6.15766318 6.30553852]
+ Shape = (4024000,) 
+
+[2023-12-17 21:22:59,116] (INFO): Train KNeighborsRegressor()
+[2023-12-18 03:46:38,435] (INFO): KNeighborsRegressor with more features предсказание:
+[[5.90779385]
+ [5.94997514]
+ [7.10293032]
+ ...
+ [6.35772758]
+ [6.24524415]
+ [6.34366715]]
+ Shape = (4024000, 1) 
+
+[2023-12-18 04:05:39,548] (INFO): Train VotingRegressor(estimators=[('knregressor', KNeighborsRegressor()),
+                            ('lgbm',
+                             LGBMRegressor(metric='mae', n_estimators=200,
+                                           num_leaves=40,
+                                           objective='regression',
+                                           random_state=42,
+                                           reg_lambda=1.7142857142857142))],
+                verbose=1)
+[2023-12-18 05:18:22,475] (INFO): VotingRegressor 1 предсказание:
+[6.05433652 5.81023111 6.90255825 ... 6.27361067 6.16837687 6.22854423]
+ Shape = (4024000,) 
+
+[2023-12-18 05:27:45,780] (INFO): Train VotingRegressor(estimators=[('knregressor', KNeighborsRegressor()),
+                            ('catboostregressor',
+                             <catboost.core.CatBoostRegressor object at 0x0000018D863FEBB0>)],
+                verbose=1)
+[2023-12-18 06:40:02,610] (INFO): VotingRegressor 2 (KNeighborsRegressor+CatBoostRegressor) предсказание:
+[6.12836572 5.95858359 7.0263983  ... 6.32509071 6.22155977 6.36133674]
+ Shape = (4024000,) 
+
+[2023-12-18 06:50:03,234] (INFO): Train VotingRegressor(estimators=[('lgbmregressor',
+                             LGBMRegressor(metric='mae', n_estimators=200,
+                                           num_leaves=40,
+                                           objective='regression',
+                                           random_state=42,
+                                           reg_lambda=1.7142857142857142)),
+                            ('catboostregressor',
+                             <catboost.core.CatBoostRegressor object at 0x0000018D863FEBB0>)],
+                verbose=1)
+[2023-12-18 06:50:55,759] (INFO): VotingRegressor 3 (LGBMRegressor+CatBoostRegressor) предсказание:
+[6.38739183 6.00162514 7.09317438 ... 6.17067165 6.1446925  6.1899721 ]
+ Shape = (4024000,) 
+
+[2023-12-18 10:00:17,667] (INFO): RandomSearch RandomizedSearchCV(cv=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None),
+                   estimator=<catboost.core.CatBoostRegressor object at 0x0000018D8632A790>,
+                   param_distributions={'depth': [6, 7, 8, 9, 10, 11, 12, 13],
+                                        'l2_leaf_reg': [5, 6, 7, 8, 9, 10, 11,
+                                                        12],
+                                        'learning_rate': [0.02, 0.03, 0.04,
+                                                          0.05, 0.06, 0.09,
+                                                          0.12, 0.15, 0.18],
+                                        'n_estimators': [300, 350, 400, 450,
+                                                         500, 550, 600, 650]},
+                   random_state=42, scoring='neg_mean_absolute_error',
+                   verbose=3)
+[2023-12-18 11:48:04,080] (INFO): CatBoostRegressor RandomSearch предсказание:
+[6.57821922 6.16435413 7.28454138 ... 6.24758327 6.2020612  6.32732346]
+ Shape = (4024000,) 
+
+[2023-12-18 12:03:05,073] (INFO): Train VotingRegressor(estimators=[('knregressor', KNeighborsRegressor()),
+                            ('catboostregressor',
+                             <catboost.core.CatBoostRegressor object at 0x0000018D863C7790>)],
+                verbose=1)
+[2023-12-18 13:14:43,945] (INFO): VotingRegressor 2 (KNeighborsRegressor+CatBoostRegressor) предсказание:
+[6.1836368  6.00434631 7.05442492 ... 6.32694849 6.21328119 6.36885344]
+ Shape = (4024000,) 
+
+[2023-12-18 13:27:03,727] (INFO): Train VotingRegressor(estimators=[('lgbmregressor',
+                             LGBMRegressor(metric='mae', n_estimators=200,
+                                           num_leaves=40,
+                                           objective='regression',
+                                           random_state=42,
+                                           reg_lambda=1.7142857142857142)),
+                            ('catboostregressor',
+                             <catboost.core.CatBoostRegressor object at 0x0000018D863C7790>)],
+                verbose=1)
+[2023-12-18 13:28:28,466] (INFO): VotingRegressor 3 (LGBMRegressor+CatBoostRegressor) предсказание:
+[6.4426629  6.04738786 7.12120099 ... 6.17252943 6.13641391 6.19748881]
+ Shape = (4024000,) 
+
