@@ -3,7 +3,8 @@
 Ссылка на соревнование на Kaggle
 https://www.kaggle.com/competitions/ventilator-pressure-prediction/overview
 
-Ссылка на гугл диск со всеми файлами сгенерированными для сабмита
+Ссылка на гугл диск со всеми файлами сгенерированными для сабмита 
+https://drive.google.com/drive/folders/13ki3Tgq8zOe_iJNG3SF_ftVS_0UXNIko?usp=sharing
 
 $~~~~~~~~~$
 
